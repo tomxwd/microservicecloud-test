@@ -2,12 +2,15 @@ package top.tomxwd.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author xieweidu
  * @createDate 2019-12-05 21:07
  */
 @SpringBootApplication
+// 本服务启动后会自动注册进Eureka服务中
+@EnableEurekaClient
 public class DeptProvider8001_App {
 
     public static void main(String[] args) {

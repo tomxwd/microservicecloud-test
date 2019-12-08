@@ -15,7 +15,9 @@ public class MySelfRule {
     @Bean
     public IRule myRule(){
         // 默认是轮询，自定义为随机
-        return new RandomRule();
+//        return new RandomRule();
+        // 改为自定义的五次轮询
+        return new FiveTimeRobinRule();
     }
 
 }

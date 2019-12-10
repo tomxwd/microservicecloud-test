@@ -9,25 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-config-3344</artifactId>
+    <artifactId>microservicecloud-config-client-3355</artifactId>
 
     <dependencies>
-        <!-- springcloud-config -->
+        <!-- SpringCloud Config 客户端 Client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- 将微服务provider注册进Eureka -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-eureka</artifactId>-->
-<!--        </dependency>-->
-        <!-- 报错就加这个依赖 -->
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jgit</groupId>-->
-<!--            <artifactId>org.eclipse.jgit</artifactId>-->
-<!--            <version>4.6.0.201612231935-r</version>-->
-<!--        </dependency>-->
+         <!--将微服务provider注册进Eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
         <!-- 图形化监控 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

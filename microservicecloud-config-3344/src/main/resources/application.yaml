@@ -7,8 +7,11 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:tomxwd/microservicecloud-config.git
-          ignoreLocalSshSettings: true
-#          hostKey: someHostKey
-#          hostKeyAlgorithm: ssh-rsa
-          privateKey:
+          #          uri: git@github.com:tomxwd/microservicecloud-config.git
+          uri: https://github.com/tomxwd/microservicecloud-config.git
+          default-label: master
+          search-paths: /
+#          ignoreLocalSshSettings: true
+##          hostKey: someHostKey
+##          hostKeyAlgorithm: ssh-rsa
+#          privateKey:
